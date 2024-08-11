@@ -12,4 +12,10 @@ void main() {
     // print(char); // print() adds a newline
     stdout.write('$char\n'); // stdout.write() does not add a newline
   }
+
+  Human(); // obejct
+}
+
+class Human { // class in dart
+
 }
