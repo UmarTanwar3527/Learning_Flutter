@@ -2,7 +2,7 @@ import 'dart:io';
 
 void main() {
   stdout.write("Umar\n");
-  print('Tanwar');
+  // print('Tanwar');
 
   // var name = stdin.readLineSync();
 
