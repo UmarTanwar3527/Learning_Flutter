@@ -2,7 +2,7 @@ import 'dart:ffi';
 import 'dart:io';
 
 void main() {
-  stdout.write("Umar\n");
+  // stdout.write("Umar\n");
   // print('Tanwar');
 
   // var name = stdin.readLineSync();
@@ -16,7 +16,8 @@ void main() {
 
   // Human(); // obejct
 
-  functions();
+  // functions();
+  varanddynamic();
 }
 
 // class Human { // class in dart
@@ -38,6 +39,25 @@ void functions() {
 
   bool isLobin = false;
   stdout.write('$isLobin\n');
+}
 
-  // var and dynamic difference 
+void varanddynamic() {
+  // var and dynamic difference
+
+  var name;
+  name = 78;
+  stdout.write('$name\n');
+  stdout.write('${name.runtimeType}\n');
+
+  name = "umar";
+  stdout.write('$name\n');
+
+  stdout.write('${name.runtimeType}\n');
+
+  dynamic name1 = "umar";
+  stdout.write('$name1\n');
+
+  name1 = 23;
+  stdout.write('$name1\n');
+
 }
