@@ -17,7 +17,20 @@ void main() {
   // Human(); // obejct
 
   // functions();
-  varanddynamic();
+  // varanddynamic();
+
+  // List<int> arr = [10, 20, 30, 40, 50, 60];
+  // int target = 30;
+
+  // int result = linearSearch(arr, target);
+
+  // if (result != -1) {
+  //   print("Element found at index: $result");
+  // } else {
+  //   print("Element not found in the array");
+  // }
+
+  
 }
 
 // class Human { // class in dart
@@ -59,5 +72,15 @@ void varanddynamic() {
 
   name1 = 23;
   stdout.write('$name1\n');
+}
 
+int linearSearch(List<int> arr, int target) {
+  // Traverse the array
+  for (int i = 0; i < arr.length; i++) {
+    // Check if the current element matches the target
+    if (arr[i] == target) {
+      return i; // Return the index of the target element
+    }
+  }
+  return -1; // Return -1 if the target is not found
 }
