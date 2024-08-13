@@ -1,4 +1,6 @@
 // Suggested code may be subject to a license. Learn more: ~LicenseLog:4235490075.
+// ignore_for_file: avoid_print
+
 import 'dart:io';
 
 void main() {
