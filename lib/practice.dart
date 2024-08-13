@@ -1,5 +1,4 @@
 // Suggested code may be subject to a license. Learn more: ~LicenseLog:4235490075.
-import 'dart:ffi';
 import 'dart:io';
 
 void main() {
@@ -34,38 +33,9 @@ void main() {
   // var clalling = MyClass();
   // print(clalling.addition(23,2));
 
-  // LIST in dart its like ARRAY in other language
-  
-  // var list = [10, 20, 30, 40, 50];
-  // print(list.length);
-  // list.add(60);
-  // print('$list');
-  // list.remove(20); // remove by value not by index
-  // print('$list');
+  // listsindart();
 
-  // var listnames = [];
-  // listnames.add('umar');
-  // listnames.add('Tanwar');
-
-  // listnames.addAll(list);
-  // print(listnames);
-  // print(listnames.length); // length of list - 8
-  // print(listnames.last); // last element of list - 60
-  // print(listnames.first); // first element of list - umar
-  // print(listnames.reversed); // print reversed list - [60, 50, 40, 30, 20, 10, 'Tanwar', 'umar']
-  // print(listnames.contains('umar')); // check element in list - true
-  // print(listnames.indexOf('umar')); // check index of element - 0
-  // print(listnames.elementAt(0)); // check element at index - umar
-  // print(listnames.sublist(0, 2)); // check sublist of list - [umar, Tanwar]
-  // print(listnames.removeLast()); // remove last element of list - 60
-  // print(listnames.removeAt(0)); // remove element at index - umar
-  // listnames.removeRange(0, 2); // remove range of element - [umar, Tanwar, 10, 20, 30, 40, 50, 60]
-
-
-  // listnames.insert(2, "umartanwar");
-  // print(listnames);
-
-
+  // mapsindart();
 }
 
 // class Human { // class in dart
@@ -127,3 +97,64 @@ class MyClass {
     return sum;
   }
 }
+
+void listsindart() {
+  // LIST in dart its like ARRAY in other language
+
+  var list = [10, 20, 30, 40, 50];
+  print(list.length);
+  list.add(60);
+  print('$list');
+  // list.remove(20); // remove by value not by index
+  // print('$list');
+
+  // var listnames = [];
+  // listnames.add('umar');
+  // listnames.add('Tanwar');
+
+  // listnames.addAll(list);
+  // print(listnames);
+  // print(listnames.length); // length of list - 8
+  // print(listnames.last); // last element of list - 60
+  // print(listnames.first); // first element of list - umar
+  // print(listnames.reversed); // print reversed list - [60, 50, 40, 30, 20, 10, 'Tanwar', 'umar']
+  // print(listnames.contains('umar')); // check element in list - true
+  // print(listnames.indexOf('umar')); // check index of element - 0
+  // print(listnames.elementAt(0)); // check element at index - umar
+  // print(listnames.sublist(0, 2)); // check sublist of list - [umar, Tanwar]
+  // print(listnames.removeLast()); // remove last element of list - 60
+  // print(listnames.removeAt(0)); // remove element at index - umar
+  // listnames.removeRange(0, 2); // remove range of element - [umar, Tanwar, 10, 20, 30, 40, 50, 60]
+
+  // listnames.insert(2, "umartanwar");
+  // print(listnames);
+}
+
+void mapsindart() {
+  // MAP in dart
+  // keys are case sensitive
+  var names = {
+    'firstname': 'Umar',
+    'lastname': 'Tanwar',
+    'dateofbirth': 27,
+    'monthofbirth': 05,
+    'M-status': 'single'
+  };
+  // print(names['dateofbirth']);
+  // print(names['key5']);
+  names['firstname'] = 'Abubakkar';
+  names['Firstname'] = 'Mohammed';
+
+  print(names);
+  // print(names.length);
+  // print(names.keys);
+  // print(names.values);
+  // print(names.containsKey('firstname'));
+  // print(names.containsValue('Tanwar'));
+  // print(names.remove('dateofbirth'));
+  // print(names);
+  names.removeWhere((key, value) => key == 'Firstname');
+  print(names);
+}
+
+
