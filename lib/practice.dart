@@ -30,7 +30,8 @@ void main() {
   //   print("Element not found in the array");
   // }
 
-  
+  var clalling = Functions();
+  print(clalling.addition(23,2));
 }
 
 // class Human { // class in dart
@@ -83,4 +84,12 @@ int linearSearch(List<int> arr, int target) {
     }
   }
   return -1; // Return -1 if the target is not found
+}
+
+class Functions{
+  int addition(int a, int b){
+    int sum = a+b;
+    
+    return sum;
+  }
 }
