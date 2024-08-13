@@ -1,5 +1,5 @@
 // Suggested code may be subject to a license. Learn more: ~LicenseLog:4235490075.
-// ignore_for_file: avoid_print
+// ignore_for_file: avoid_print, prefer_typing_uninitialized_variables, prefer_const_declarations
 
 import 'dart:io';
 
@@ -39,7 +39,9 @@ void main() {
 
   // mapsindart();
 
-  finalandconst();
+  // finalandconst();
+
+  conditionalprogramming();
 }
 
 // class Human { // class in dart
@@ -161,8 +163,7 @@ void mapsindart() {
   print(names);
 }
 
-void finalandconst(){
-
+void finalandconst() {
   final String name = 'umar';
   print(name);
 
@@ -170,12 +171,24 @@ void finalandconst(){
   age = 21;
   print(age);
 
-  const gender = "male";// should be inline only
+  const gender = "male"; // should be inline only
   print(gender);
 
-  final subjects = ["maths","english","science","social science"];
+  final subjects = ["maths", "english", "science", "social science"];
   subjects.add("computer"); // can be modified in final(at runtime)
   // if const was used then it can't be modified in final(at runtime)
   print(subjects);
 }
+
+void conditionalprogramming() {
+  var n = 105;
+  if (n > 100 && n < 110) {
+    print('greater than 100 and smaller than 110');
+  } else if (n < 100) {
+    print('smaller');
+  } else {
+    print('equals 100');
+  }
+}
+
 
