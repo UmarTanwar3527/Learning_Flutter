@@ -31,8 +31,41 @@ void main() {
   //   print("Element not found in the array");
   // }
 
-  var clalling = Functions();
-  print(clalling.addition(23,2));
+  // var clalling = MyClass();
+  // print(clalling.addition(23,2));
+
+  // LIST in dart its like ARRAY in other language
+  
+  // var list = [10, 20, 30, 40, 50];
+  // print(list.length);
+  // list.add(60);
+  // print('$list');
+  // list.remove(20); // remove by value not by index
+  // print('$list');
+
+  // var listnames = [];
+  // listnames.add('umar');
+  // listnames.add('Tanwar');
+
+  // listnames.addAll(list);
+  // print(listnames);
+  // print(listnames.length); // length of list - 8
+  // print(listnames.last); // last element of list - 60
+  // print(listnames.first); // first element of list - umar
+  // print(listnames.reversed); // print reversed list - [60, 50, 40, 30, 20, 10, 'Tanwar', 'umar']
+  // print(listnames.contains('umar')); // check element in list - true
+  // print(listnames.indexOf('umar')); // check index of element - 0
+  // print(listnames.elementAt(0)); // check element at index - umar
+  // print(listnames.sublist(0, 2)); // check sublist of list - [umar, Tanwar]
+  // print(listnames.removeLast()); // remove last element of list - 60
+  // print(listnames.removeAt(0)); // remove element at index - umar
+  // listnames.removeRange(0, 2); // remove range of element - [umar, Tanwar, 10, 20, 30, 40, 50, 60]
+
+
+  // listnames.insert(2, "umartanwar");
+  // print(listnames);
+
+
 }
 
 // class Human { // class in dart
@@ -87,10 +120,10 @@ int linearSearch(List<int> arr, int target) {
   return -1; // Return -1 if the target is not found
 }
 
-class Functions{
-  int addition(int a, int b){
-    int sum = a+b;
-    
+class MyClass {
+  int addition(int a, int b) {
+    int sum = a + b;
+
     return sum;
   }
 }
