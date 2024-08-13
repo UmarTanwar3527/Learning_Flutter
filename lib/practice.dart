@@ -38,6 +38,8 @@ void main() {
   // listsindart();
 
   // mapsindart();
+
+  finalandconst();
 }
 
 // class Human { // class in dart
@@ -159,4 +161,21 @@ void mapsindart() {
   print(names);
 }
 
+void finalandconst(){
+
+  final String name = 'umar';
+  print(name);
+
+  final int age;
+  age = 21;
+  print(age);
+
+  const gender = "male";// should be inline only
+  print(gender);
+
+  final subjects = ["maths","english","science","social science"];
+  subjects.add("computer"); // can be modified in final(at runtime)
+  // if const was used then it can't be modified in final(at runtime)
+  print(subjects);
+}
 
