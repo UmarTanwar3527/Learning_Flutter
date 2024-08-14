@@ -41,7 +41,9 @@ void main() {
 
   // finalandconst();
 
-  conditionalprogramming();
+  // conditionalprogramming();
+
+  loops();
 }
 
 // class Human { // class in dart
@@ -191,4 +193,21 @@ void conditionalprogramming() {
   }
 }
 
+void loops() {
+  print("loops");
 
+  // for (var i = 0; i < 10; i++) {
+  //   print(i);
+  // }
+
+  int n = 10;
+  // while (n > 0) {
+  //   print(n);
+  //   n--;
+  // }
+
+  do {
+    print(n);
+    n--;
+  } while (n < 0);
+}
