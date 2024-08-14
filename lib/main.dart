@@ -42,7 +42,7 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Container(
         width: 100,
         height: 100,
-        color: Colors.deepPurple,
+        color: Colors.yellow,
         child: Text("Container"),
       ),
     );
