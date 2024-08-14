@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -29,22 +31,23 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  
   @override
   Widget build(BuildContext context) {
-    
     return Scaffold(
-      appBar: AppBar(
-        // TRY THIS: Try changing the color here to a specific color (to
-        // Colors.amber, perhaps?) and trigger a hot reload to see the AppBar
-        title: Text('Flutter Container'),
-      ),
-      body: Container(
-        width: 100,
-        height: 100,
-        color: Colors.yellow,
-        child: Text("Container"),
-      ),
-    );
+        appBar: AppBar(
+          // TRY THIS: Try changing the color here to a specific color (to
+          // Colors.amber, perhaps?) and trigger a hot reload to see the AppBar
+          title: Text('Flutter Container'),
+        ),
+        body: Center(
+          child: Container(
+            width: 100,
+            height: 100,
+            color: Colors.yellow,
+            // Suggested code may be subject to a license. Learn more: ~LicenseLog:3843875880.
+            // Suggested code may be subject to a license. Learn more: ~LicenseLog:2082286002.
+            child: Text("Container Widget"),
+          ),
+        ));
   }
 }
