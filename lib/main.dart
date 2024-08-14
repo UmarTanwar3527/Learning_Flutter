@@ -67,7 +67,19 @@ class _MyHomePageState extends State<MyHomePage> {
         //   ),
         // )
 
-        
+        // Understainding Text and its Styling
+        body: Text("Hello Flutter Developers" , style: TextStyle(
+          fontSize: 20,
+          backgroundColor: Colors.purple,
+          fontWeight: FontWeight.bold,
+          color: Colors.lightBlue,
+          fontStyle: FontStyle.italic,
+          letterSpacing: 2,
+          wordSpacing: 3,
+          decoration: TextDecoration.underline,
+          decorationColor: Colors.red,
+          decorationStyle: TextDecorationStyle.wavy,
+        ),),
     );
   }
 }
