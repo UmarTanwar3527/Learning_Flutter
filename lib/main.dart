@@ -37,17 +37,37 @@ class _MyHomePageState extends State<MyHomePage> {
         appBar: AppBar(
           // TRY THIS: Try changing the color here to a specific color (to
           // Colors.amber, perhaps?) and trigger a hot reload to see the AppBar
-          title: Text('Flutter Container'),
+          // title: Text('Flutter Container'),
+          title: Text('Flutter Widget'),
+          backgroundColor: Colors.blue,
         ),
-        body: Center(
-          child: Container(
-            width: 100,
-            height: 100,
-            color: Colors.yellow,
-            // Suggested code may be subject to a license. Learn more: ~LicenseLog:3843875880.
-            // Suggested code may be subject to a license. Learn more: ~LicenseLog:2082286002.
-            child: Text("Container Widget"),
-          ),
-        ));
+
+        // Understanding Container
+        // body: Center(
+        //   child: Container(
+        //     width: 100,
+        //     height: 100,
+        //     color: Colors.yellow,
+        //     child: Text("Container Widget"),
+        //   ),
+
+        // Understanding Widget
+        // body: Center(
+        //   child: Text(
+        //     'Hello World',
+        //     style: TextStyle(fontSize: 25),
+        //   ),
+        // ),
+        // body: Center(
+        //   child: Container(
+        //     width: 200,
+        //     height: 100,
+        //     color: Colors.yellow,
+        //     child: Center(child: Text("Center")),
+        //   ),
+        // )
+
+        
+    );
   }
 }
