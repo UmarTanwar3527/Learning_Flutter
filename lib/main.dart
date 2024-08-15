@@ -40,6 +40,7 @@ class _MyHomePageState extends State<MyHomePage> {
           // title: Text('Flutter Container'),
           title: Text('Learning Flutter'),
           backgroundColor: Colors.blue,
+          centerTitle: true,
         ),
 
         // Understanding Container
