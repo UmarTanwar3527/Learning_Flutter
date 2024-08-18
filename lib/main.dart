@@ -182,33 +182,33 @@ class _MyHomePageState extends State<MyHomePage> {
         // Understanding InkWell Widget and It's Importance
         // InkWell = GestureDetector + Container = Gesture Detector
         // ignore: avoid_unnecessary_containers
-        body: Center(
-          child: InkWell(
-            onTap: () {
-              print("Single Tap");
-            },
-            onLongPress: () {
-              print("Long Pressed");
-            },
-            onDoubleTap: () {
-              print("Double Tap");
-            },
-            child: Container(
-              width: 200,
-              height: 200,
-              color: Colors.amber,
-              child: Center(
-                child: InkWell(
-                    onTap: () {
-                      print("Text Widget Tapped");
-                    },
-                    child: Text("Tap Me",
-                        style: TextStyle(
-                            fontSize: 25, fontWeight: FontWeight.w700))),
-              ),
-            ),
-          ),
-        )
+        // body: Center(
+        //   child: InkWell(
+        //     onTap: () {
+        //       print("Single Tap");
+        //     },
+        //     onLongPress: () {
+        //       print("Long Pressed");
+        //     },
+        //     onDoubleTap: () {
+        //       print("Double Tap");
+        //     },
+        //     child: Container(
+        //       width: 200,
+        //       height: 200,
+        //       color: Colors.amber,
+        //       child: Center(
+        //         child: InkWell(
+        //             onTap: () {
+        //               print("Text Widget Tapped");
+        //             },
+        //             child: Text("Tap Me",
+        //                 style: TextStyle(
+        //                     fontSize: 25, fontWeight: FontWeight.w700))),
+        //       ),
+        //     ),
+        //   ),
+        // )
         
         
         );
