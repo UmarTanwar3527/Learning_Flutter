@@ -107,7 +107,7 @@ class _MyHomePageState extends State<MyHomePage> {
         //   ),
 
         // Understainding How to ADD Images
-        body: Image.asset('assets/images/car.png'),
+        // body: Image.asset('assets/images/car.png'),
         // body: Center(
         //   child: SizedBox(
         //     width: 100,
@@ -116,9 +116,66 @@ class _MyHomePageState extends State<MyHomePage> {
         //   )
         // )
 
-        
-        
-        
-        );
+        // Understainding what are rows and coloumns
+        body: Container(
+            color: Colors.purple,
+            height: 400,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  // crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    Text(
+                      'A',
+                      style: TextStyle(fontSize: 25),
+                    ),
+                    Text(
+                      'B',
+                      style: TextStyle(fontSize: 25),
+                    ),
+                    Column(children: [
+                      ElevatedButton(onPressed: () {}, child: Text("Button 1")),
+                      ElevatedButton(onPressed: () {}, child: Text("Button 2"))
+                    ]),
+                    Text(
+                      'C',
+                      style: TextStyle(fontSize: 25),
+                    ),
+                    Text(
+                      'D',
+                      style: TextStyle(fontSize: 25),
+                    ),
+                    Text(
+                      'E',
+                      style: TextStyle(fontSize: 25),
+                    ),
+                  ],
+                ),
+                Text(
+                  'A',
+                  style: TextStyle(fontSize: 25),
+                ),
+                Text(
+                  'B',
+                  style: TextStyle(fontSize: 25),
+                ),
+                Text(
+                  'C',
+                  style: TextStyle(fontSize: 25),
+                ),
+                Text(
+                  'D',
+                  style: TextStyle(fontSize: 25),
+                ),
+                Text(
+                  'E',
+                  style: TextStyle(fontSize: 25),
+                ),
+                ElevatedButton(onPressed: () {}, child: Text("Click Me"))
+              ],
+            )));
   }
 }
