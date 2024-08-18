@@ -107,7 +107,15 @@ class _MyHomePageState extends State<MyHomePage> {
         //   ),
 
         // Understainding How to ADD Images
-        body: Image.asset('assets/images/car.png'),
+        body: Image.asset('assets/images/car.jpg'),
+        
+        // body: Center(
+        //   child: SizedBox(
+        //     width: 100,
+        //     height: 100,
+        //     child: Image.asset('assets/images/Ironman.jpg'),
+        //   )
+        // )
         
         
         );
