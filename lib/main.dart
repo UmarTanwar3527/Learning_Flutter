@@ -117,65 +117,100 @@ class _MyHomePageState extends State<MyHomePage> {
         // )
 
         // Understainding what are rows and coloumns
-        body: Container(
-            color: Colors.purple,
-            height: 400,
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.start,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  // crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    Text(
-                      'A',
-                      style: TextStyle(fontSize: 25),
-                    ),
-                    Text(
-                      'B',
-                      style: TextStyle(fontSize: 25),
-                    ),
-                    Column(children: [
-                      ElevatedButton(onPressed: () {}, child: Text("Button 1")),
-                      ElevatedButton(onPressed: () {}, child: Text("Button 2"))
-                    ]),
-                    Text(
-                      'C',
-                      style: TextStyle(fontSize: 25),
-                    ),
-                    Text(
-                      'D',
-                      style: TextStyle(fontSize: 25),
-                    ),
-                    Text(
-                      'E',
-                      style: TextStyle(fontSize: 25),
-                    ),
-                  ],
-                ),
-                Text(
-                  'A',
-                  style: TextStyle(fontSize: 25),
-                ),
-                Text(
-                  'B',
-                  style: TextStyle(fontSize: 25),
-                ),
-                Text(
-                  'C',
-                  style: TextStyle(fontSize: 25),
-                ),
-                Text(
-                  'D',
-                  style: TextStyle(fontSize: 25),
-                ),
-                Text(
-                  'E',
-                  style: TextStyle(fontSize: 25),
-                ),
-                ElevatedButton(onPressed: () {}, child: Text("Click Me"))
-              ],
-            )));
+        // body: Container(
+        //     color: Colors.purple,
+        //     height: 400,
+        //     child: Column(
+        //       mainAxisAlignment: MainAxisAlignment.start,
+        //       crossAxisAlignment: CrossAxisAlignment.start,
+        //       children: [
+        //         Row(
+        //           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        //           // crossAxisAlignment: CrossAxisAlignment.center,
+        //           children: [
+        //             Text(
+        //               'A',
+        //               style: TextStyle(fontSize: 25),
+        //             ),
+        //             Text(
+        //               'B',
+        //               style: TextStyle(fontSize: 25),
+        //             ),
+        //             Column(children: [
+        //               ElevatedButton(onPressed: () {}, child: Text("Button 1")),
+        //               ElevatedButton(onPressed: () {}, child: Text("Button 2"))
+        //             ]),
+        //             Text(
+        //               'C',
+        //               style: TextStyle(fontSize: 25),
+        //             ),
+        //             Text(
+        //               'D',
+        //               style: TextStyle(fontSize: 25),
+        //             ),
+        //             Text(
+        //               'E',
+        //               style: TextStyle(fontSize: 25),
+        //             ),
+        //           ],
+        //         ),
+        //         Text(
+        //           'A',
+        //           style: TextStyle(fontSize: 25),
+        //         ),
+        //         Text(
+        //           'B',
+        //           style: TextStyle(fontSize: 25),
+        //         ),
+        //         Text(
+        //           'C',
+        //           style: TextStyle(fontSize: 25),
+        //         ),
+        //         Text(
+        //           'D',
+        //           style: TextStyle(fontSize: 25),
+        //         ),
+        //         Text(
+        //           'E',
+        //           style: TextStyle(fontSize: 25),
+        //         ),
+        //         ElevatedButton(onPressed: () {}, child: Text("Click Me"))
+        //       ],
+        //     )
+        //   )
+
+        // Understanding InkWell Widget and It's Importance
+        // InkWell = GestureDetector + Container = Gesture Detector
+        // ignore: avoid_unnecessary_containers
+        body: Center(
+          child: InkWell(
+            onTap: () {
+              print("Single Tap");
+            },
+            onLongPress: () {
+              print("Long Pressed");
+            },
+            onDoubleTap: () {
+              print("Double Tap");
+            },
+            child: Container(
+              width: 200,
+              height: 200,
+              color: Colors.amber,
+              child: Center(
+                child: InkWell(
+                    onTap: () {
+                      print("Text Widget Tapped");
+                    },
+                    child: Text("Tap Me",
+                        style: TextStyle(
+                            fontSize: 25, fontWeight: FontWeight.w700))),
+              ),
+            ),
+          ),
+        )
+        
+        
+        );
   }
 }
