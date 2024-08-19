@@ -209,8 +209,97 @@ class _MyHomePageState extends State<MyHomePage> {
         //     ),
         //   ),
         // )
-        
-        
-        );
+
+        // Understainding Flutter ScrollView Widgets & Its Types
+        // body: Text("ScrollView and Its Types"),
+        body: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: SingleChildScrollView(
+                child: Column(
+              children: [
+                Padding(
+                  padding: const EdgeInsets.only(bottom: 11),
+                  child: SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child: Row(
+                      children: [
+                        Container(
+                          height: 200,
+                          width: 200,
+                          color: Colors.purple,
+                          margin: EdgeInsets.only(right: 11),
+                        ),
+                        Container(
+                          height: 200,
+                          width: 200,
+                          color: Colors.orange,
+                          margin: EdgeInsets.only(right: 11),
+                        ),
+                        Container(
+                          height: 200,
+                          width: 200,
+                          color: Colors.cyan,
+                          margin: EdgeInsets.only(right: 11),
+                        ),
+                        Container(
+                          height: 200,
+                          width: 200,
+                          color: Colors.grey,
+                          margin: EdgeInsets.only(right: 11),
+                        ),
+                        Container(
+                          height: 200,
+                          width: 200,
+                          color: Colors.lightGreen,
+                          margin: EdgeInsets.only(right: 11),
+                        ),
+                        Container(
+                          height: 200,
+                          width: 200,
+                          color: Colors.pink,
+                          margin: EdgeInsets.only(right: 11),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+                Container(
+                  height: 200,
+                  width: 200,
+                  color: Colors.pink,
+                  margin: EdgeInsets.only(bottom: 11),
+                ),
+                Container(
+                  height: 200,
+                  width: 200,
+                  color: Colors.yellow,
+                  margin: EdgeInsets.only(bottom: 11),
+                ),
+                Container(
+                  height: 200,
+                  width: 200,
+                  color: Colors.green,
+                  margin: EdgeInsets.only(bottom: 11),
+                ),
+                Container(
+                  height: 200,
+                  width: 200,
+                  color: Colors.red,
+                  margin: EdgeInsets.only(bottom: 11),
+                ),
+                Container(
+                  height: 200,
+                  width: 200,
+                  color: Colors.blue,
+                  margin: EdgeInsets.only(bottom: 11),
+                ),
+                Container(
+                  height: 200,
+                  width: 200,
+                  color: Colors.black,
+                  margin: EdgeInsets.only(bottom: 11),
+                )
+              ],
+            ))));
   }
 }
