@@ -322,45 +322,48 @@ class _MyHomePageState extends State<MyHomePage> {
       // // scrollDirection: Axis.horizontal,
       // itemExtent: 100,
       // ),
-      body: ListView.separated(
-        itemBuilder: (context, index) {
-          return Row(children: [
-            Padding(
-              padding: const EdgeInsets.all(0.8),
-              child: Column(
-                children: [
-                  Text(
-                    '${arrNames[index]} ',
-                    style: TextStyle(fontSize: 25, fontWeight: FontWeight.w500),
-                  ),
-                  Padding(
-                      padding: const EdgeInsets.all(0.8),
-                      child: Text(
-                        '${arrNames[index]} ',
-                        style: TextStyle(
-                            fontSize: 20, fontWeight: FontWeight.w500),
-                      ))
-                ],
-              ),
-            ),
-            Text(
-              '${arrNames[index]} ',
-              style: TextStyle(fontSize: 25, fontWeight: FontWeight.w500),
-            ),
-          ]);
-        },
-        itemCount: arrNames.length,
-        separatorBuilder: (context, index) {
-          return Divider(
-            height: 4,
-            // thickness: 1,
-            color: Colors.black,
-          );
-        },
-        // scrollDirection: Axis.horizontal,
-      ),
+      // body: ListView.separated(
+      //   itemBuilder: (context, index) {
+      //     return Row(children: [
+      //       Padding(
+      //         padding: const EdgeInsets.all(0.8),
+      //         child: Column(
+      //           children: [
+      //             Text(
+      //               '${arrNames[index]} ',
+      //               style: TextStyle(fontSize: 25, fontWeight: FontWeight.w500),
+      //             ),
+      //             Padding(
+      //                 padding: const EdgeInsets.all(0.8),
+      //                 child: Text(
+      //                   '${arrNames[index]} ',
+      //                   style: TextStyle(
+      //                       fontSize: 20, fontWeight: FontWeight.w500),
+      //                 ))
+      //           ],
+      //         ),
+      //       ),
+      //       Text(
+      //         '${arrNames[index]} ',
+      //         style: TextStyle(fontSize: 25, fontWeight: FontWeight.w500),
+      //       ),
+      //     ]);
+      //   },
+      //   itemCount: arrNames.length,
+      //   separatorBuilder: (context, index) {
+      //     return Divider(
+      //       height: 4,
+      //       // thickness: 1,
+      //       color: Colors.black,
+      //     );
+      //   },
+      //   // scrollDirection: Axis.horizontal,
+      // ),
 
-      
+
+      // 
+
+
 
       // UnderstaindingGridView Widget
       // body: GridView.count(
