@@ -374,16 +374,23 @@ class _MyHomePageState extends State<MyHomePage> {
               color: Colors.deepPurple,
               // border: Border.all(color: Colors.black, width: 2),
               // borderRadius: BorderRadius.circular(15),
-              borderRadius: BorderRadius.only(
-                topLeft: Radius.circular(21),
-                bottomRight: Radius.circular(21),
-              ),
+              // borderRadius: BorderRadius.only(
+              //   topLeft: Radius.circular(21),
+              //   bottomRight: Radius.circular(21),
+              // ),
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.grey.shade500,
+                  blurRadius: 29,
+                  )
+              ],
+              shape: BoxShape.circle // shape and borderradius can't be used pralarlly
             ),
           ),
         ),
       ),
 
-      
+
 
       // UnderstaindingGridView Widget
       // body: GridView.count(
