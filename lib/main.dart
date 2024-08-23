@@ -33,7 +33,7 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
-    var arrNames = ['naman', 'rahul', 'mohit', 'nakul', 'manoj', 'laxman'];
+    // var arrNames = ['naman', 'rahul', 'mohit', 'nakul', 'manoj', 'laxman'];
     return Scaffold(
       appBar: AppBar(
         // TRY THIS: Try changing the color here to a specific color (to
