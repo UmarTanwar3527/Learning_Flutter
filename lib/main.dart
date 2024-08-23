@@ -308,15 +308,15 @@ class _MyHomePageState extends State<MyHomePage> {
       //   // scrollDirection: Axis.horizontal,
       //   reverse: true,
       //   children: const [
-      //     Text("One", style: TextStyle(fontSize: 25, fontWeight: FontWeight.w1000)),
-      //     Text("Two", style: TextStyle(fontSize: 25, fontWeight: FontWeight.w1000)),
-      //     Text("Three", style: TextStyle(fontSize: 25, fontWeight: FontWeight.w1000)),
-      //     Text("Four", style: TextStyle(fontSize: 25, fontWeight: FontWeight.w1000)),
-      //     Text("Five", style: TextStyle(fontSize: 25, fontWeight: FontWeight.w1000)),
+      //     Text("One", style: TextStyle(fontSize: 25, fontWeight: FontWeight.w900)),
+      //     Text("Two", style: TextStyle(fontSize: 25, fontWeight: FontWeight.w900)),
+      //     Text("Three", style: TextStyle(fontSize: 25, fontWeight: FontWeight.w900)),
+      //     Text("Four", style: TextStyle(fontSize: 25, fontWeight: FontWeight.w900)),
+      //     Text("Five", style: TextStyle(fontSize: 25, fontWeight: FontWeight.w900)),
       //   ],
       // ),
       // body: ListView.builder(itemBuilder: (context, index) {
-      //   return Text('${arrNames[index]} ', style: TextStyle(fontSize: 25, fontWeight: FontWeight.w1000),);
+      //   return Text('${arrNames[index]} ', style: TextStyle(fontSize: 25, fontWeight: FontWeight.w900),);
       // },
       // itemCount: arrNames.length,
       // // scrollDirection: Axis.horizontal,
@@ -331,21 +331,21 @@ class _MyHomePageState extends State<MyHomePage> {
       //           children: [
       //             Text(
       //               '${arrNames[index]} ',
-      //               style: TextStyle(fontSize: 25, fontWeight: FontWeight.w1000),
+      //               style: TextStyle(fontSize: 25, fontWeight: FontWeight.w900),
       //             ),
       //             Padding(
       //                 padding: const EdgeInsets.all(0.8),
       //                 child: Text(
       //                   '${arrNames[index]} ',
       //                   style: TextStyle(
-      //                       fontSize: 20, fontWeight: FontWeight.w1000),
+      //                       fontSize: 20, fontWeight: FontWeight.w900),
       //                 ))
       //           ],
       //         ),
       //       ),
       //       Text(
       //         '${arrNames[index]} ',
-      //         style: TextStyle(fontSize: 25, fontWeight: FontWeight.w1000),
+      //         style: TextStyle(fontSize: 25, fontWeight: FontWeight.w900),
       //       ),
       //     ]);
       //   },
@@ -391,40 +391,40 @@ class _MyHomePageState extends State<MyHomePage> {
       // ),
 
       // Understainding What are Expanded Widgets
-      body : Column(
-        // mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Expanded(
-            flex: 2,
-            child: Container(
-            // width: 100,
-            height: 100,
-            color: Colors.purple,
-          ),),
-          Expanded(
-            flex: 4,
-            child: Container(
-            // width: 100,
-            height: 100,
-            color: Colors.black,
-          ),),
-          Expanded(
-            flex: 2,
-            child: Container(
-            // width: 100,
-            height: 100,
-            color: Colors.lightGreen,
-          ),),
-          Expanded(
-            flex: 1, // default it's 1
-            child: Container(
-            // width: 100,
-            height: 100,
-            color: Colors.grey,
-          ),
-          ),
-        ],
-      )
+      // body : Column(
+      //   // mainAxisAlignment: MainAxisAlignment.center,
+      //   children: [
+      //     Expanded(
+      //       flex: 2,
+      //       child: Container(
+      //       // width: 100,
+      //       height: 100,
+      //       color: Colors.purple,
+      //     ),),
+      //     Expanded(
+      //       flex: 4,
+      //       child: Container(
+      //       // width: 100,
+      //       height: 100,
+      //       color: Colors.black,
+      //     ),),
+      //     Expanded(
+      //       flex: 2,
+      //       child: Container(
+      //       // width: 100,
+      //       height: 100,
+      //       color: Colors.lightGreen,
+      //     ),),
+      //     Expanded(
+      //       flex: 1, // default it's 1
+      //       child: Container(
+      //       // width: 100,
+      //       height: 100,
+      //       color: Colors.grey,
+      //     ),
+      //     ),
+      //   ],
+      // )
 
       
 
