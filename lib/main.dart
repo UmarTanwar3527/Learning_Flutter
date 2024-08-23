@@ -308,15 +308,15 @@ class _MyHomePageState extends State<MyHomePage> {
       //   // scrollDirection: Axis.horizontal,
       //   reverse: true,
       //   children: const [
-      //     Text("One", style: TextStyle(fontSize: 25, fontWeight: FontWeight.w500)),
-      //     Text("Two", style: TextStyle(fontSize: 25, fontWeight: FontWeight.w500)),
-      //     Text("Three", style: TextStyle(fontSize: 25, fontWeight: FontWeight.w500)),
-      //     Text("Four", style: TextStyle(fontSize: 25, fontWeight: FontWeight.w500)),
-      //     Text("Five", style: TextStyle(fontSize: 25, fontWeight: FontWeight.w500)),
+      //     Text("One", style: TextStyle(fontSize: 25, fontWeight: FontWeight.w1000)),
+      //     Text("Two", style: TextStyle(fontSize: 25, fontWeight: FontWeight.w1000)),
+      //     Text("Three", style: TextStyle(fontSize: 25, fontWeight: FontWeight.w1000)),
+      //     Text("Four", style: TextStyle(fontSize: 25, fontWeight: FontWeight.w1000)),
+      //     Text("Five", style: TextStyle(fontSize: 25, fontWeight: FontWeight.w1000)),
       //   ],
       // ),
       // body: ListView.builder(itemBuilder: (context, index) {
-      //   return Text('${arrNames[index]} ', style: TextStyle(fontSize: 25, fontWeight: FontWeight.w500),);
+      //   return Text('${arrNames[index]} ', style: TextStyle(fontSize: 25, fontWeight: FontWeight.w1000),);
       // },
       // itemCount: arrNames.length,
       // // scrollDirection: Axis.horizontal,
@@ -331,21 +331,21 @@ class _MyHomePageState extends State<MyHomePage> {
       //           children: [
       //             Text(
       //               '${arrNames[index]} ',
-      //               style: TextStyle(fontSize: 25, fontWeight: FontWeight.w500),
+      //               style: TextStyle(fontSize: 25, fontWeight: FontWeight.w1000),
       //             ),
       //             Padding(
       //                 padding: const EdgeInsets.all(0.8),
       //                 child: Text(
       //                   '${arrNames[index]} ',
       //                   style: TextStyle(
-      //                       fontSize: 20, fontWeight: FontWeight.w500),
+      //                       fontSize: 20, fontWeight: FontWeight.w1000),
       //                 ))
       //           ],
       //         ),
       //       ),
       //       Text(
       //         '${arrNames[index]} ',
-      //         style: TextStyle(fontSize: 25, fontWeight: FontWeight.w500),
+      //         style: TextStyle(fontSize: 25, fontWeight: FontWeight.w1000),
       //       ),
       //     ]);
       //   },
@@ -361,36 +361,72 @@ class _MyHomePageState extends State<MyHomePage> {
       // ),
 
       // Understainding How to Add Decoration to Container
-      body: Container(
-        width: double.infinity,
-        height: double.infinity,
-        color: Colors.blue.shade50,
-        // decoration: ,
-        child: Center(
-          child: Container(
-            width: 150,
-            height: 150,
-            decoration: BoxDecoration(
-              color: Colors.deepPurple,
-              // border: Border.all(color: Colors.black, width: 2),
-              // borderRadius: BorderRadius.circular(15),
-              // borderRadius: BorderRadius.only(
-              //   topLeft: Radius.circular(21),
-              //   bottomRight: Radius.circular(21),
-              // ),
-              boxShadow: [
-                BoxShadow(
-                  color: Colors.grey.shade500,
-                  blurRadius: 29,
-                  )
-              ],
-              shape: BoxShape.circle // shape and borderradius can't be used pralarlly
-            ),
+      // body: Container(
+      //   width: double.infinity,
+      //   height: double.infinity,
+      //   color: Colors.blue.shade100,
+      //   // decoration: ,
+      //   child: Center(
+      //     child: Container(
+      //       width: 1100,
+      //       height: 1100,
+      //       decoration: BoxDecoration(
+      //         color: Colors.deepPurple,
+      //         // border: Border.all(color: Colors.black, width: 2),
+      //         // borderRadius: BorderRadius.circular(15),
+      //         // borderRadius: BorderRadius.only(
+      //         //   topLeft: Radius.circular(21),
+      //         //   bottomRight: Radius.circular(21),
+      //         // ),
+      //         boxShadow: [
+      //           BoxShadow(
+      //             color: Colors.grey.shade1000,
+      //             blurRadius: 29,
+      //             )
+      //         ],
+      //         shape: BoxShape.circle // shape and borderradius can't be used pralarlly
+      //       ),
+      //     ),
+      //   ),
+      // ),
+
+      // Understainding What are Expanded Widgets
+      body : Column(
+        // mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Expanded(
+            flex: 2,
+            child: Container(
+            // width: 100,
+            height: 100,
+            color: Colors.purple,
+          ),),
+          Expanded(
+            flex: 4,
+            child: Container(
+            // width: 100,
+            height: 100,
+            color: Colors.black,
+          ),),
+          Expanded(
+            flex: 2,
+            child: Container(
+            // width: 100,
+            height: 100,
+            color: Colors.lightGreen,
+          ),),
+          Expanded(
+            flex: 1, // default it's 1
+            child: Container(
+            // width: 100,
+            height: 100,
+            color: Colors.grey,
           ),
-        ),
-      ),
+          ),
+        ],
+      )
 
-
+      
 
       // UnderstaindingGridView Widget
       // body: GridView.count(
