@@ -426,9 +426,25 @@ class _MyHomePageState extends State<MyHomePage> {
       //   ],
       // )
 
+      // Understainding How to Add Padding/Margin on Text Widget
+      // body: Padding(
+      //   padding: EdgeInsets.all(8.0),
+      //   child: Text(
+      //   "Hello World!",
+      //   style: TextStyle(fontSize: 21),
+      // ),),
+      body: Container(
+          color: Colors.lightBlue,
+          margin: EdgeInsets.all(11),
+          padding: EdgeInsets.all(11),
+          child: Text(
+            "Hello World!",
+            style: TextStyle(fontSize: 18, color: Colors.white),
+          )),
+
       
 
-      // UnderstaindingGridView Widget
+      // Understainding GridView Widget
       // body: GridView.count(
       //   crossAxisCount: 3,
       //   children: List.generate(
