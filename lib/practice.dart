@@ -1,6 +1,7 @@
 // Suggested code may be subject to a license. Learn more: ~LicenseLog:4235490075.
 // ignore_for_file: avoid_print, prefer_typing_uninitialized_variables, prefer_const_declarations
 
+import 'dart:ffi';
 import 'dart:io';
 
 void main() {
@@ -43,7 +44,9 @@ void main() {
 
   // conditionalprogramming();
 
-  loops();
+  // loops();
+
+  practiceProblems();
 }
 
 // class Human { // class in dart
@@ -210,4 +213,21 @@ void loops() {
     print(n);
     n--;
   } while (n < 0);
+}
+
+void practiceProblems() {
+  // Write a program to print your name in Dart.
+  // print("Mohammed Umar Tanwar");
+
+  // Write a program to print Hello I am “John Doe” and Hello I’am “John Doe” with single and double quotes.
+  // print('Hello I am "John Doe"');
+  // print("Hello I'am 'John Doe'");
+
+  // Declare constant type of int set value 7.
+  // const int num = 7;
+  // print(num);
+  // num = 8;
+  // print(num);
+
+  
 }
