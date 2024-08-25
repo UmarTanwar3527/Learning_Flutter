@@ -33,7 +33,7 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
-    // var arrNames = ['naman', 'rahul', 'mohit', 'nakul', 'manoj', 'laxman'];
+    var arrNames = ['naman', 'rahul', 'mohit', 'nakul', 'manoj', 'laxman'];
     return Scaffold(
       appBar: AppBar(
         // TRY THIS: Try changing the color here to a specific color (to
@@ -433,16 +433,35 @@ class _MyHomePageState extends State<MyHomePage> {
       //   "Hello World!",
       //   style: TextStyle(fontSize: 21),
       // ),),
-      body: Container(
-          color: Colors.lightBlue,
-          margin: EdgeInsets.all(11),
-          padding: EdgeInsets.all(11),
-          child: Text(
-            "Hello World!",
-            style: TextStyle(fontSize: 18, color: Colors.white),
-          )),
+      // body: Container(
+      //     color: Colors.lightBlue,
+      //     margin: EdgeInsets.all(11),
+      //     padding: EdgeInsets.all(11),
+      //     child: Text(
+      //       "Hello World!",
+      //       style: TextStyle(fontSize: 18, color: Colors.white),
+      //     )),
 
-      
+      // Understainding ListTile and How to Include it in ListView Builder
+      body: ListView.separated(
+        itemBuilder: (context, index) {
+          return ListTile(
+            leading: Text('${index+1}'),
+            title: Text(arrNames[index]),
+            subtitle: Text('Number'),
+            trailing: Icon(Icons.add),
+          );
+        },
+        itemCount: arrNames.length,
+        separatorBuilder: (context, index) {
+          return Divider(
+            height: 4,
+            // thickness: 1,
+            color: Colors.black,
+          );
+        },
+        // scrollDirection: Axis.horizontal,
+      ),
 
       // Understainding GridView Widget
       // body: GridView.count(
