@@ -33,7 +33,7 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
-    var arrNames = ['naman', 'rahul', 'mohit', 'nakul', 'manoj', 'laxman'];
+    // var arrNames = ['naman', 'rahul', 'mohit', 'nakul', 'manoj', 'laxman'];
     return Scaffold(
       appBar: AppBar(
         // TRY THIS: Try changing the color here to a specific color (to
@@ -443,31 +443,39 @@ class _MyHomePageState extends State<MyHomePage> {
       //     )),
 
       // Understainding ListTile and How to Include it in ListView Builder
-      body: ListView.separated(
-        itemBuilder: (context, index) {
-          return ListTile(
-            // Understainding Circle Avatar Widget
-            //   leading: CircleAvatar(
-            //   backgroundColor: Colors.lightGreen,
-            //   // we set radius using radius
-            //   backgroundImage: AssetImage('assets/images/Umar.jpg'),
-            //   // child: Text('${index+1}', style: TextStyle(color: Colors.black, fontSize: 21),),
-            // ),
-            leading: Text('${index+1}', style: TextStyle(fontSize: 16),),
-            title: Text(arrNames[index]),
-            subtitle: Text('Number'),
-            trailing: Icon(Icons.add),
-          );
-        },
-        itemCount: arrNames.length,
-        separatorBuilder: (context, index) {
-          return Divider(
-            height: 4,
-            // thickness: 1,
-            color: Colors.black,
-          );
-        },
-        // scrollDirection: Axis.horizontal,
+      // body: ListView.separated(
+      //   itemBuilder: (context, index) {
+      //     return ListTile(
+      //       // Understainding Circle Avatar Widget
+      //       //   leading: CircleAvatar(
+      //       //   backgroundColor: Colors.lightGreen,
+      //       //   // we set radius using radius
+      //       //   backgroundImage: AssetImage('assets/images/Umar.jpg'),
+      //       //   // child: Text('${index+1}', style: TextStyle(color: Colors.black, fontSize: 21),),
+      //       // ),
+      //       leading: Text('${index+1}', style: TextStyle(fontSize: 16),),
+      //       title: Text(arrNames[index]),
+      //       subtitle: Text('Number'),
+      //       trailing: Icon(Icons.add),
+      //     );
+      //   },
+      //   itemCount: arrNames.length,
+      //   separatorBuilder: (context, index) {
+      //     return Divider(
+      //       height: 4,
+      //       // thickness: 1,
+      //       color: Colors.black,
+      //     );
+      //   },
+      //   // scrollDirection: Axis.horizontal,
+      // ),
+
+      // Understainding How to Add Custom Font Over Text
+      body: Center(
+        child: Text(
+          "My self Umar Tanwar \nDo a Google Search Bro",
+          style: TextStyle(fontFamily: 'Poppins'),
+        ),
       ),
 
       // Understainding GridView Widget
