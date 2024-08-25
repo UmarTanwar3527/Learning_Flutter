@@ -446,7 +446,14 @@ class _MyHomePageState extends State<MyHomePage> {
       body: ListView.separated(
         itemBuilder: (context, index) {
           return ListTile(
-            leading: Text('${index+1}'),
+            // Understainding Circle Avatar Widget
+            //   leading: CircleAvatar(
+            //   backgroundColor: Colors.lightGreen,
+            //   // we set radius using radius
+            //   backgroundImage: AssetImage('assets/images/Umar.jpg'),
+            //   // child: Text('${index+1}', style: TextStyle(color: Colors.black, fontSize: 21),),
+            // ),
+            leading: Text('${index+1}', style: TextStyle(fontSize: 16),),
             title: Text(arrNames[index]),
             subtitle: Text('Number'),
             trailing: Icon(Icons.add),
