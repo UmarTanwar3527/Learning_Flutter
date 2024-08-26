@@ -78,8 +78,8 @@ flutter:
       fonts:
         - asset: assets/fonts/Poppins-Black.ttf
         - asset: assets/fonts/Poppins-BlackItalic.ttf
-        - asset: assets/fonts/Poppins-Blod.ttf
-        - asset: assets/fonts/Poppins-BlodItalic.ttf
+        - asset: assets/fonts/Poppins-Bold.ttf
+        - asset: assets/fonts/Poppins-BoldItalic.ttf
         - asset: assets/fonts/Poppins-ExtraBold.ttf
         - asset: assets/fonts/Poppins-ExtraBoldItalic.ttf
         - asset: assets/fonts/Poppins-Regular.ttf
