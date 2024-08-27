@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:myapp/ui_utilies/utils.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,6 +18,11 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
+        // Understainding Styles and Themes
+        textTheme: TextTheme(
+          headlineLarge: TextStyle(fontSize: 21, fontWeight: FontWeight.bold, color: Colors.blue),
+          headlineSmall: TextStyle(fontSize: 18, fontWeight: FontWeight.w400, color: Colors.lightGreen)
+        ),
       ),
       home: const MyHomePage(),
     );
@@ -36,11 +42,8 @@ class _MyHomePageState extends State<MyHomePage> {
     // var arrNames = ['naman', 'rahul', 'mohit', 'nakul', 'manoj', 'laxman'];
     return Scaffold(
       appBar: AppBar(
-        // TRY THIS: Try changing the color here to a specific color (to
-        // Colors.amber, perhaps?) and trigger a hot reload to see the AppBar
-        // title: Text('Flutter Container'),
         title: Text('Learning Flutter'),
-        backgroundColor: Colors.blue,
+        backgroundColor: Colors.lightGreen,
         centerTitle: true,
       ),
 
@@ -471,14 +474,21 @@ class _MyHomePageState extends State<MyHomePage> {
       // ),
 
       // Understainding How to Add Custom Font Over Text
-      body: Center(
-        child: Text(
-          "My self Umar Tanwar \nDo a Google Search Bro",
-          style: TextStyle(fontFamily: 'Poppins'),
-        ),
-      ),
+      // body: Center(
+      //   child: Text(
+      //     "My self Umar Tanwar \nDo a Google Search Bro",
+      //     style: TextStyle(fontFamily: 'Poppins'),
+      //   ),
+      // ),
 
-      
+      // Understainding Styles and Themes
+      body: Column(
+        children: [
+          Text("Umar Tanwar", style: mTextStyle21(textColor: Colors.purple, fontWeight: FontWeight.w800),),
+          Text("Umar Tanwar", style: mTextStyle18(),),
+          Text("Umar Tanwar", style: mTextStyle16().copyWith(color: Colors.orange),),
+          Text("Umar Tanwar", style: mTextStyle12(),),
+      ],),
 
       // Understainding GridView Widget
       // body: GridView.count(
