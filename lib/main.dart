@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
+// ignore: unused_import
 import 'package:myapp/ui_utilies/utils.dart';
 
 void main() {
@@ -482,13 +483,16 @@ class _MyHomePageState extends State<MyHomePage> {
       // ),
 
       // Understainding Styles and Themes
-      body: Column(
-        children: [
-          Text("Umar Tanwar", style: mTextStyle21(textColor: Colors.purple, fontWeight: FontWeight.w800),),
-          Text("Umar Tanwar", style: mTextStyle18(),),
-          Text("Umar Tanwar", style: mTextStyle16().copyWith(color: Colors.orange),),
-          Text("Umar Tanwar", style: mTextStyle12(),),
-      ],),
+      // body: Column(
+      //   children: [
+      //     Text("Umar Tanwar", style: mTextStyle21(textColor: Colors.purple, fontWeight: FontWeight.w800),),
+      //     Text("Umar Tanwar", style: mTextStyle18(),),
+      //     Text("Umar Tanwar", style: mTextStyle16().copyWith(color: Colors.orange),),
+      //     Text("Umar Tanwar", style: mTextStyle12(),),
+      // ],),
+
+      // Understainding Card Widget
+      
 
       // Understainding GridView Widget
       // body: GridView.count(
