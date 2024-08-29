@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 // ignore: unused_import
 import 'package:myapp/ui_utilies/utils.dart';
+import 'package:intl/intl.dart';
 
 void main() {
   runApp(const MyApp());
@@ -629,19 +630,39 @@ class _MyHomePageState extends State<MyHomePage> {
         // )
 
         // Understainding How to Get Current Date & Time
+        // body: Column(
+        //   // mainAxisAlignment: MainAxisAlignment.center,
+        //   children: [
+        //   Text(
+        //     "Date: ${dateTime.year.toString()}"
+        //     "-${dateTime.month.toString()}"
+        //     "-${dateTime.day.toString()}",
+        //     style: TextStyle(fontSize: 25),
+        //   ),
+        //   Text(
+        //     "Time: ${dateTime.hour.toString()}"
+        //     "-${dateTime.minute.toString()}"
+        //     "-${dateTime.second.toString()}",
+        //     style: TextStyle(fontSize: 25),
+        //   ),
+        //   ElevatedButton(
+        //     onPressed: () {
+        //       setState(() {});
+        //     },
+        //     child: Text("Get Current Date & Time"),
+        //   )
+        // ])
+
+        // Understainding Flutter DateFormat: How to Format a Date and Time
         body: Column(
           // mainAxisAlignment: MainAxisAlignment.center,
           children: [
           Text(
-            "Date: ${dateTime.year.toString()}"
-            "-${dateTime.month.toString()}"
-            "-${dateTime.day.toString()}",
+            "Date: ${DateFormat('MMM dd,yyyy').format(dateTime)}",
             style: TextStyle(fontSize: 25),
           ),
           Text(
-            "Time: ${dateTime.hour.toString()}"
-            "-${dateTime.minute.toString()}"
-            "-${dateTime.second.toString()}",
+            "Time: ${DateFormat('jms').format(dateTime)}",
             style: TextStyle(fontSize: 25),
           ),
           ElevatedButton(
@@ -651,6 +672,8 @@ class _MyHomePageState extends State<MyHomePage> {
             child: Text("Get Current Date & Time"),
           )
         ])
+
+        
 
         // Understainding GridView Widget
         // body: GridView.count(
