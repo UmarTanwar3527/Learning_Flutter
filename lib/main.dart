@@ -3,7 +3,7 @@
 import 'package:flutter/material.dart';
 // ignore: unused_import
 import 'package:myapp/ui_utilies/utils.dart';
-import 'package:intl/intl.dart';
+// import 'package:intl/intl.dart';
 
 void main() {
   runApp(const MyApp());
@@ -49,7 +49,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     // var arrNames = ['naman', 'rahul', 'mohit', 'nakul', 'manoj', 'laxman'];
-    var dateTime = DateTime.now(); // used to get date and time
+    // var dateTime = DateTime.now(); // used to get date and time
     return Scaffold(
         appBar: AppBar(
           title: Text('Learning Flutter'),
@@ -654,26 +654,46 @@ class _MyHomePageState extends State<MyHomePage> {
         // ])
 
         // Understainding Flutter DateFormat: How to Format a Date and Time
-        body: Column(
-          // mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-          Text(
-            "Date: ${DateFormat('MMM dd,yyyy').format(dateTime)}",
-            style: TextStyle(fontSize: 25),
-          ),
-          Text(
-            "Time: ${DateFormat('jms').format(dateTime)}",
-            style: TextStyle(fontSize: 25),
-          ),
-          ElevatedButton(
-            onPressed: () {
-              setState(() {});
-            },
-            child: Text("Get Current Date & Time"),
-          )
-        ])
+        // body: Column(
+        //   // mainAxisAlignment: MainAxisAlignment.center,
+        //   children: [
+        //   Text(
+        //     "Date: ${DateFormat('MMM dd,yyyy').format(dateTime)}",
+        //     style: TextStyle(fontSize: 25),
+        //   ),
+        //   Text(
+        //     "Time: ${DateFormat('jms').format(dateTime)}",
+        //     style: TextStyle(fontSize: 25),
+        //   ),
+        //   ElevatedButton(
+        //     onPressed: () {
+        //       setState(() {});
+        //     },
+        //     child: Text("Get Current Date & Time"),
+        //   )
+        // ])
 
-        
+        // Understainding Flutter Date Picker
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text(
+                "Select Date",
+                style: TextStyle(fontSize: 21),
+              ),
+              ElevatedButton(
+                  onPressed: () async {
+                    DateTime? datePicker = await showDatePicker(
+                        context: context,
+                        initialDate: DateTime.now(),
+                        firstDate: DateTime(2020),
+                        lastDate: DateTime(2025));
+                  },
+                  child: Text('Show'))
+            ],
+          ),
+        )
 
         // Understainding GridView Widget
         // body: GridView.count(
@@ -690,7 +710,6 @@ class _MyHomePageState extends State<MyHomePage> {
         //     ),
         //   )
         // )
-
         );
   }
 }
