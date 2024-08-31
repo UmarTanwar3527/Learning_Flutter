@@ -689,8 +689,24 @@ class _MyHomePageState extends State<MyHomePage> {
                         initialDate: DateTime.now(),
                         firstDate: DateTime(2020),
                         lastDate: DateTime(2025));
+                    if (datePicker != null) {
+                      print(
+                          'Date Selected: ${datePicker.day}-${datePicker.month}-${datePicker.year}');
+                    }
                   },
-                  child: Text('Show'))
+                  child: Text('Select Date')),
+              ElevatedButton(
+                  onPressed: () async {
+                    TimeOfDay? timePicker = await showTimePicker(
+                        context: context,
+                        initialTime: TimeOfDay.now(),
+                        initialEntryMode: TimePickerEntryMode.input);
+                    if (timePicker != null) {
+                      print(
+                          'Time Selected: ${timePicker.hour} : ${timePicker.minute}');
+                    }
+                  },
+                  child: Text("Select Time"))
             ],
           ),
         )
