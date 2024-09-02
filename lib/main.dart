@@ -46,20 +46,24 @@ class _MyHomePageState extends State<MyHomePage> {
   var emailController = TextEditingController();
   var passwordController = TextEditingController();
 
+  callBackFunction (){
+    print("callBack Function is called") ;
+  }
+
   @override
   Widget build(BuildContext context) {
     // var arrNames = ['naman', 'rahul', 'mohit', 'nakul', 'manoj', 'laxman'];
     // var dateTime = DateTime.now(); // used to get date and time
-    var arrColors = [
-      Colors.red,
-      Colors.orange,
-      Colors.green,
-      Colors.grey,
-      Colors.blue,
-      Colors.pink,
-      Colors.purpleAccent,
-      Colors.brown,
-    ];
+    // var arrColors = [
+    //   Colors.red,
+    //   Colors.orange,
+    //   Colors.green,
+    //   Colors.grey,
+    //   Colors.blue,
+    //   Colors.pink,
+    //   Colors.purpleAccent,
+    //   Colors.brown,
+    // ]; //used in gridview
     return Scaffold(
       appBar: AppBar(
         title: Text('Learning Flutter'),
@@ -776,21 +780,32 @@ class _MyHomePageState extends State<MyHomePage> {
       //     ],),
       //   )
       // ]),
-      body: GridView.builder(itemBuilder: (context, index) {
-        return Container(color: arrColors[index]);
-      },
-      itemCount: arrColors.length,
+      // body: GridView.builder(itemBuilder: (context, index) {
+      //   return Container(color: arrColors[index]);
+      // },
+      // itemCount: arrColors.length,
       // gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
       //   crossAxisCount: 3,
       //   crossAxisSpacing: 11,
       //   mainAxisSpacing: 11),
       // ),
-      gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
-        maxCrossAxisExtent: 100,
-        crossAxisSpacing: 11,
-        mainAxisSpacing: 11),
+      // gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
+      //   maxCrossAxisExtent: 100,
+      //   crossAxisSpacing: 11,
+      //   mainAxisSpacing: 11),
+      // ),
+
+      // Understainding Callback Function
+      body: ElevatedButton(
+        onPressed: callBackFunction,
+        child: Text("Click me"),
+        // onPressed: () {
+        //   print("clicked");
+        // },
       ),
-      
+
+      //  
+
     );
   }
 }
