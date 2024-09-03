@@ -46,9 +46,9 @@ class _MyHomePageState extends State<MyHomePage> {
   var emailController = TextEditingController();
   var passwordController = TextEditingController();
 
-  callBackFunction() {
-    print("callBack Function is called");
-  }
+  // callBackFunction() {
+  //   print("callBack Function is called");
+  // }
 
   @override
   Widget build(BuildContext context) {
@@ -805,89 +805,150 @@ class _MyHomePageState extends State<MyHomePage> {
         // ),
 
         // Understainding Splitting the app into widget's
-        body: Container(
-          child: Column(
-            children: [
-              CatItems(),
-              Details(),
-              SubDetails(),
-              CatItems(),
-            ],
-          ),
-        ));
-  }
-}
+        // body: Column(
+        //   children: [
+        //     CatItems(),
+        //     Details(),
+        //     SubDetails(),
+        //     CatItems(),
+        //   ],
+        // )
 
-// Understainding Splitting the app into widget's
-class CatItems extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Expanded(
-      flex: 2,
-      child: Container(
-        color: Colors.blue,
-        child: ListView.builder(
-            itemBuilder: (context, index) => Padding(
-                  padding: const EdgeInsets.all(11.0),
-                  child: SizedBox(
-                    width: 100,
-                    child: CircleAvatar(
-                      backgroundColor: Colors.green,
-                    ),
-                  ),
-                ),
-            itemCount: 10,
-            scrollDirection: Axis.horizontal),
-      ),
-    );
-  }
-}
-class Details extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Expanded(
-      flex: 4,
-      child: Container(
-        color: Colors.orange,
-        child: ListView.builder(
-          itemBuilder: (context, index) => Padding(
-            padding: EdgeInsets.all(11.0),
-            child: ListTile(
-              leading: CircleAvatar(
-                backgroundColor: Colors.green,
-              ),
-              title: Text("Name"),
-              subtitle: Text("Mobile Number"),
-              trailing: Icon(Icons.delete),
-            ),
-          ),
-        ),
-      ),
-    );
-  }
-}
-class SubDetails extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Expanded(
-      flex: 1,
-      child: Container(
-        color: Colors.blueGrey,
-        child: ListView.builder(
-          itemBuilder: (context, index) => Padding(
-            padding: EdgeInsets.all(8.0),
-            child: Container(
-              width: 200,
+        // Understainding Stack Widget
+        body: Stack(
+          children: [
+            Container(
+              width: 220,
+              height: 220,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(11),
                 color: Colors.blue,
               ),
             ),
-          ),
-          itemCount: 10,
-          scrollDirection: Axis.horizontal,
-        ),
-      ),
-    );
+            Container(
+              width: 180,
+              height: 180,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(11),
+                color: Colors.orange,
+              ),
+            ),
+            Container(
+              width: 130,
+              height: 130,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(11),
+                color: Colors.purple,
+              ),
+            ),
+          ],
+        )
+
+        // 
+
+      );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Understainding Splitting the app into widget's
+// class CatItems extends StatelessWidget {
+//   @override
+//   Widget build(BuildContext context) {
+//     return Expanded(
+//       flex: 2,
+//       child: Container(
+//         color: Colors.blue,
+//         child: ListView.builder(
+//             itemBuilder: (context, index) => Padding(
+//                   padding: const EdgeInsets.all(11.0),
+//                   child: SizedBox(
+//                     width: 100,
+//                     child: CircleAvatar(
+//                       backgroundColor: Colors.green,
+//                     ),
+//                   ),
+//                 ),
+//             itemCount: 10,
+//             scrollDirection: Axis.horizontal),
+//       ),
+//     );
+//   }
+// }
+// class Details extends StatelessWidget {
+//   @override
+//   Widget build(BuildContext context) {
+//     return Expanded(
+//       flex: 4,
+//       child: Container(
+//         color: Colors.orange,
+//         child: ListView.builder(
+//           itemBuilder: (context, index) => Padding(
+//             padding: EdgeInsets.all(11.0),
+//             child: ListTile(
+//               leading: CircleAvatar(
+//                 backgroundColor: Colors.green,
+//               ),
+//               title: Text("Name"),
+//               subtitle: Text("Mobile Number"),
+//               trailing: Icon(Icons.delete),
+//             ),
+//           ),
+//         ),
+//       ),
+//     );
+//   }
+// }
+// class SubDetails extends StatelessWidget {
+//   @override
+//   Widget build(BuildContext context) {
+//     return Expanded(
+//       flex: 1,
+//       child: Container(
+//         color: Colors.blueGrey,
+//         child: ListView.builder(
+//           itemBuilder: (context, index) => Padding(
+//             padding: EdgeInsets.all(8.0),
+//             child: Container(
+//               width: 200,
+//               decoration: BoxDecoration(
+//                 borderRadius: BorderRadius.circular(11),
+//                 color: Colors.blue,
+//               ),
+//             ),
+//           ),
+//           itemCount: 10,
+//           scrollDirection: Axis.horizontal,
+//         ),
+//       ),
+//     );
+//   }
+// }
