@@ -932,7 +932,8 @@ class _MyHomePageState extends State<MyHomePage> {
         //   ),
         // )
 
-        
+        // Understainding Rich Text in flutter
+        body: Text("Understainding Rich Text in flutter"),
         
         );
   }
