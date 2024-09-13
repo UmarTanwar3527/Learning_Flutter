@@ -933,37 +933,40 @@ class _MyHomePageState extends State<MyHomePage> {
       // )
 
       // Understainding Rich Text in flutter
-      body: Center(
-        child: RichText(
-            text: TextSpan(
-          style: TextStyle(
-            color: Colors.grey,
-            fontSize: 21,
-            fontWeight: FontWeight.w900,
-          ),
-          children: const <TextSpan>[
-            TextSpan(
-              text: 'Hello ',
-            ),
-            TextSpan(
-                text: 'World',
-                style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 32,
-                    fontFamily: 'Poppins',
-                    color: Colors.blue)),
-            TextSpan(text: '\nWelcome to ', style: TextStyle(
-        
-            )),
-            TextSpan(text: 'Flutter', style: TextStyle(
-              fontWeight: FontWeight.bold,
-              fontSize: 32,
-              color: Colors.blue,
-              fontFamily: 'Poppins',
-            )),
-          ],
-        )),
-      ),
+      // body: Center(
+      //   child: RichText(
+      //       text: TextSpan(
+      //     style: TextStyle(
+      //       color: Colors.grey,
+      //       fontSize: 21,
+      //       fontWeight: FontWeight.w900,
+      //     ),
+      //     children: const <TextSpan>[
+      //       TextSpan(
+      //         text: 'Hello ',
+      //       ),
+      //       TextSpan(
+      //           text: 'World',
+      //           style: TextStyle(
+      //               fontWeight: FontWeight.bold,
+      //               fontSize: 32,
+      //               fontFamily: 'Poppins',
+      //               color: Colors.blue)),
+      //       TextSpan(text: '\nWelcome to ', style: TextStyle(
+
+      //       )),
+      //       TextSpan(text: 'Flutter', style: TextStyle(
+      //         fontWeight: FontWeight.bold,
+      //         fontSize: 32,
+      //         color: Colors.blue,
+      //         fontFamily: 'Poppins',
+      //       )),
+      //     ],
+      //   )),
+      // ),
+
+      // Understainding Flutter Icon Widgets
+      body: Center(child: Icon(Icons.add_business_rounded, size: 50,color: Colors.lightGreen,)),
     );
   }
 }
