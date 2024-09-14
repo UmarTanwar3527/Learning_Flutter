@@ -6,6 +6,7 @@ import 'package:myapp/ui_utilies/utils.dart';
 // ignore: unused_import
 import 'package:myapp/widgets/rounded_btn.dart';
 // import 'package:intl/intl.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 void main() {
   runApp(const MyApp());
@@ -966,7 +967,23 @@ class _MyHomePageState extends State<MyHomePage> {
       // ),
 
       // Understainding Flutter Icon Widgets
-      body: Center(child: Icon(Icons.add_business_rounded, size: 50,color: Colors.lightGreen,)),
+      // body: Center(child: Icon(Icons.add_business_rounded, size: 50,color: Colors.lightGreen,)),
+
+      // Understainding Flutter Font Awesome Icons
+      // body: Center(child: Row(
+      //   mainAxisAlignment: MainAxisAlignment.center,
+      //   children: const [
+      //     Icon(Icons.play_circle_outline, size: 50, color: Colors.green,),
+      //     FaIcon(FontAwesomeIcons.google, size: 50),
+      //     FaIcon(FontAwesomeIcons.amazonPay, size: 50,)
+      //   ],
+      // )),
+
+      // Understainding Positioned Widget
+      body: ,
+
+
+      
     );
   }
 }
