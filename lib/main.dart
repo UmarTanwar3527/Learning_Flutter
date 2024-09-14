@@ -980,7 +980,28 @@ class _MyHomePageState extends State<MyHomePage> {
       // )),
 
       // Understainding Positioned Widget
-      body: ,
+      body: Container(
+        color: Color.fromARGB(255, 209, 197, 197),
+        width: 300,
+        height: 300, 
+        // to give full height & width double.infinity is used
+        child: Stack(
+          children: [
+            Positioned(
+              bottom: 11,
+              left: 11,
+              child: Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(11),
+                  color: Color.fromARGB(255, 161, 140, 140),
+                ),
+                width: 100,
+                height: 50,
+              ),
+            ) 
+          ],
+        ),
+      ),
 
 
       
