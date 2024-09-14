@@ -15,18 +15,18 @@ TextStyle mTextStyle21(
   );
 }
 TextStyle mTextStyle18() {
-  return TextStyle(
+  return const TextStyle(
     fontSize: 18,
     color: Colors.green
   );
 }
 TextStyle mTextStyle16() {
-  return TextStyle(
+  return const TextStyle(
     fontSize: 16,
   );
 }
 TextStyle mTextStyle12() {
-  return TextStyle(
+  return const TextStyle(
     fontSize: 12,
     color: Colors.pink,
   );
